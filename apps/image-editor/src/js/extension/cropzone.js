@@ -367,8 +367,9 @@ const Cropzone = fabric.util.createClass(
      * @param {number} maxHeight - limit max height
      * @param {number} scaleTo - cropzone ratio
      * @returns {{width: number, height: number}}
-     * @private
+     * @private TODO
      */
+    // eslint-disable-next-line complexity
     adjustRatioCropzoneSize({ width, height, leftMaker, topMaker, maxWidth, maxHeight, scaleTo }) {
       width = maxWidth ? clamp(width, 1, maxWidth) : width;
       height = maxHeight ? clamp(height, 1, maxHeight) : height;

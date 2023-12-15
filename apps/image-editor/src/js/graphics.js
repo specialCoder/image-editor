@@ -978,6 +978,8 @@ class Graphics {
     this._canvas = new fabric.Canvas(canvasElement, {
       containerClass: 'tui-image-editor-canvas-container',
       enableRetinaScaling: false,
+      // 元素对象被选中时保持在当前z轴，不会跳到最顶层
+      preserveObjectStacking: true, // 默认false
     });
   }
 

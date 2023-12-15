@@ -193,8 +193,9 @@ class Cropper extends Component {
    * @param {number} y - Canvas-Mouse-Position Y
    * @param {number|null} presetRatio - fixed aspect ratio (width/height) of the cropzone (null if not set)
    * @returns {{left: number, top: number, width: number, height: number}}
-   * @private
+   * @private TODO
    */
+  // eslint-disable-next-line complexity
   _calcRectDimensionFromPoint(x, y, presetRatio = null) {
     const canvas = this.getCanvas();
     const canvasWidth = canvas.getWidth();

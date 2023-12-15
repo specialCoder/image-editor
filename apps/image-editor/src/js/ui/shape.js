@@ -195,9 +195,11 @@ class Shape extends Submenu {
   /**
    * Change icon color
    * @param {object} event - add button event object
-   * @private
+   * @private TODO
    */
   _changeShapeHandler(event) {
+    // eslint-disable-next-line no-console
+    console.log('_changeShapeHandler==>');
     const button = event.target.closest('.tui-image-editor-button');
     if (button) {
       this.actions.stopDrawingMode();
